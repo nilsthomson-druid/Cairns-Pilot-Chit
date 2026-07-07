@@ -6,10 +6,10 @@
   <title>Ports North Pilotage Certificate</title>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0a3d62">
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-gray-100 font-sans min-h-screen pb-12 select-none">
 
@@ -19,7 +19,7 @@
       <div class="w-6 h-6 rounded-full bg-white flex items-center justify-center text-[#0a3d62] font-black text-xs">▲</div>
       <h1 class="text-md font-bold tracking-wider uppercase">Ports North Form</h1>
     </div>
-    <span class="bg-emerald-600 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Mobile Grid V28</span>
+    <span class="bg-emerald-600 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Mobile Grid V30</span>
   </header>
 
   <main class="max-w-xl mx-auto p-3 space-y-4">
@@ -264,55 +264,6 @@
             <label class="font-bold uppercase text-slate-400 ml-2 text-left">Bulb Bow</label>
           </div>
         </div>
-
-        <div class="grid grid-cols-3 gap-1 text-[9px] font-bold bg-slate-750 p-2 rounded-lg border border-slate-700">
-          <div>
-            <label class="block text-slate-400 uppercase mb-0.5 text-left">Double Hull</label>
-            <div class="grid grid-cols-2 gap-0.5">
-              <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 has-[:checked]:bg-blue-900"><input type="radio" name="doubleHull" value="Yes" checked class="sr-only"> Y</label>
-              <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 has-[:checked]:bg-blue-900"><input type="radio" name="doubleHull" value="No" class="sr-only"> N</label>
-            </div>
-          </div>
-          <div>
-            <label class="block text-slate-400 uppercase mb-0.5 text-left">Inert Gas</label>
-            <div class="grid grid-cols-2 gap-0.5">
-              <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 has-[:checked]:bg-blue-900"><input type="radio" name="inertGas" value="Yes" checked class="sr-only"> Y</label>
-              <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 has-[:checked]:bg-blue-900"><input type="radio" name="inertGas" value="No" class="sr-only"> N</label>
-            </div>
-          </div>
-          <div>
-            <label class="block text-slate-400 uppercase mb-0.5 text-left">SBT</label>
-            <div class="grid grid-cols-2 gap-0.5">
-              <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 has-[:checked]:bg-blue-900"><input type="radio" name="sbt" value="Yes" checked class="sr-only"> Y</label>
-              <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 has-[:checked]:bg-blue-900"><input type="radio" name="sbt" value="No" class="sr-only"> N</label>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-slate-750 p-2.5 rounded-lg border border-slate-700 space-y-2 text-left">
-          <div class="flex justify-between items-center">
-            <label class="flex items-center gap-1.5 text-xs text-amber-400 font-bold cursor-pointer">
-              <input type="checkbox" id="ballastNA" onchange="toggleBallastNAFieldRules(this.checked)" class="rounded bg-slate-700 border-slate-600 checked:bg-blue-600"> Ballast Not Applicable (N/A)
-            </label>
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Ballast Entry</span>
-          </div>
-          
-          <div class="grid grid-cols-2 gap-2">
-            <div id="wrapper-ballastTons">
-              <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-0.5 text-left">Discharge (Tons)</label>
-              <input type="number" inputmode="numeric" pattern="[0-9]*" id="ballastTons" placeholder="Tons" class="w-full p-1.5 rounded bg-slate-700 border border-slate-600 text-xs text-white text-right focus:outline-none">
-            </div>
-            <div id="wrapper-ballastPlace">
-              <label class="block text-[9px] font-bold uppercase tracking-wider text-slate-400 mb-0.5 text-left">Ballast Position</label>
-              <div class="grid grid-cols-4 gap-0.5 text-[9px] font-black">
-                <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 cursor-pointer has-[:checked]:bg-blue-900"><input type="radio" name="ballastPlace" value="At Roads" checked class="sr-only"> Rds</label>
-                <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 cursor-pointer has-[:checked]:bg-blue-900"><input type="radio" name="ballastPlace" value="At Anchor" class="sr-only"> Anc</label>
-                <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 cursor-pointer has-[:checked]:bg-blue-900"><input type="radio" name="ballastPlace" value="Enroute" class="sr-only"> Enr</label>
-                <label class="flex items-center justify-center py-1 border border-slate-600 rounded-sm bg-slate-700 cursor-pointer has-[:checked]:bg-blue-900"><input type="radio" name="ballastPlace" value="In Port" class="sr-only"> Prt</label>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -448,7 +399,7 @@
             
             <div class="mt-2 flex items-center justify-between bg-slate-800 p-2 rounded border border-slate-700">
               <span class="text-[9px] text-slate-400 font-bold uppercase">Report Tier:</span>
-              <span id="delayBadge" class="text-xs font-black px-2 py-0.5 rounded tracking-wide bg-slate-700 text-slate-300">None</span>
+              <span id="delayBadge" class="text-xs font-black px-2 py-0.5 rounded tracking-wide bg-slate-750 text-slate-400">None</span>
             </div>
             <input type="hidden" id="delays" value="None">
           </div>
@@ -564,16 +515,16 @@
       try {
         for (let key in defaults) {
           if (key === 'pilotName') {
-            let stored = await localforage.getItem('pnorth_v27_pilotName') || defaults.pilotName;
+            let stored = await localforage.getItem('pnorth_v30_pilotName') || defaults.pilotName;
             renderSelectMenuOptions('pilotName1', stored);
             renderSelectMenuOptions('pilotName2', ["", ...stored]);
             renderSelectMenuOptions('pilotName3', ["", ...stored]);
           } else {
-            let stored = await localforage.getItem('pnorth_v27_' + key) || defaults[key];
+            let stored = await localforage.getItem('pnorth_v30_' + key) || defaults[key];
             renderSelectMenuOptions(key, stored);
           }
         }
-        let storedVessels = await localforage.getItem('pnorth_v27_vessels') || vesselList;
+        let storedVessels = await localforage.getItem('pnorth_v30_vessels') || vesselList;
         vesselList = storedVessels;
         renderAlphabeticalVessels();
         await loadPersistentStateData();
@@ -693,20 +644,7 @@
     }
 
     function toggleBallastNAFieldRules(checked) {
-      const tonsInput = document.getElementById('ballastTons');
-      const placeRadios = document.querySelectorAll('input[name="ballastPlace"]');
-      if (checked) {
-        if(tonsInput) { tonsInput.value = ''; tonsInput.disabled = true; }
-        placeRadios.forEach(r => r.disabled = true);
-        document.getElementById('wrapper-ballastTons')?.classList.add('opacity-40', 'pointer-events-none');
-        document.getElementById('wrapper-ballastPlace')?.classList.add('opacity-40', 'pointer-events-none');
-      } else {
-        if(tonsInput) tonsInput.disabled = false;
-        placeRadios.forEach(r => r.disabled = false);
-        document.getElementById('wrapper-ballastTons')?.classList.remove('opacity-40', 'pointer-events-none');
-        document.getElementById('wrapper-ballastPlace')?.classList.remove('opacity-40', 'pointer-events-none');
-      }
-      updateStateBackupStore();
+      // Stub function preserved to maintain forward structural framework stability compatibility
     }
 
     function mergePickerFields(baseId) {
@@ -833,7 +771,6 @@
           if (el) {
             if (el.type === 'checkbox') {
               el.checked = s[k];
-              if(k === 'ballastNA') toggleBallastNAFieldRules(s[k]);
             } else {
               el.value = s[k];
               if (k === 'movement') toggleRemLogic(s[k]);
@@ -874,14 +811,14 @@
 
         let rowH = 7; 
         let sY = 25;
-        let totalGridHeight = 12 * rowH;
+        let totalGridHeight = 12 * rowH; // Stable 12 structural matrix rows alignment grid blueprint
 
         let remarksTopY = sY + totalGridHeight;
         let certTextY = remarksTopY + 31;
         let sigTopY = certTextY + 4;
         let absoluteFrameBottomY = sigTopY + 32;
 
-        // Outer Frame Alignment Boundaries Line
+        // Outer Structural Perimeter Box Frame Box Line
         doc.setDrawColor(0,0,0); doc.setLineWidth(0.4);
         doc.rect(10, sY, 190, absoluteFrameBottomY - sY); 
 
@@ -890,7 +827,7 @@
           doc.line(10, sY + (i * rowH), 200, sY + (i * rowH));
         }
         
-        // Vertical Alignment Margins
+        // Vertical Layout Divider Margins
         let c1 = 80;  
         let c2 = 140; 
         doc.line(c1, sY, c1, sY + totalGridHeight);  
@@ -898,7 +835,7 @@
 
         doc.setFontSize(9.5); doc.setFont("Helvetica", "bold");
 
-        // --- ROW POPULATION ENGINE PIPELINE ---
+        // --- ROW POPULATION MATRIX PIPELINE ---
         // Row 1
         doc.text("Pilot(s)", 12, sY + 4.5);
         let currentPilotFontSize = 9.5;
@@ -937,7 +874,7 @@
         doc.setFont("Helvetica", "bold"); doc.text("TO Berth", c2 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(getValue('toLoc'), 198, rY + 4.5, { align: "right" });
 
-        // Row 3
+        // Row 3: Housing fully reinstated Ship Type field box layout matrix
         rY += rowH;
         doc.setFont("Helvetica", "bold"); doc.text("Transfer By", 12, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(getRadio('transferBy'), c1 - 2, rY + 4.5, { align: "right" });
@@ -945,8 +882,8 @@
         doc.setFont("Helvetica", "bold"); doc.text("Ship Agent", c1 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(getValue('shipAgent'), c2 - 2, rY + 4.5, { align: "right" });
         
-        doc.setFont("Helvetica", "bold"); doc.text("Sched Move Time", c2 + 2, rY + 4.5); 
-        doc.setFont("Helvetica", "normal"); doc.text(convertTo24HourPrintString(getValue('timeSchedMove')), 198, rY + 4.5, { align: "right" });
+        doc.setFont("Helvetica", "bold"); doc.text("Ship Type", c2 + 2, rY + 4.5); 
+        doc.setFont("Helvetica", "normal"); doc.text(getValue('shipType'), 198, rY + 4.5, { align: "right" });
 
         // Row 4
         rY += rowH;
@@ -1014,13 +951,13 @@
         doc.setFont("Helvetica", "bold"); doc.text("All Fast", c2 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(convertTo24HourPrintString(getValue('allFast')), 198, rY + 4.5, { align: "right" });
 
-        // Row 10
+        // Row 10: Cleaned configuration matrix row housing the Scheduled Movement Time
         rY += rowH;
         doc.setFont("Helvetica", "bold"); doc.text("Thrust Config", 12, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(`${getRadio('thrust')} (${getRadio('tPower')})`, c1 - 2, rY + 4.5, { align: "right" });
         
-        doc.setFont("Helvetica", "bold"); doc.text("SBT / Double Hull", c1 + 2, rY + 4.5); 
-        doc.setFont("Helvetica", "normal"); doc.text(`${getRadio('sbt')} / ${getRadio('doubleHull')}`, c2 - 2, rY + 4.5, { align: "right" });
+        doc.setFont("Helvetica", "bold"); doc.text("Sched Move Time", c1 + 2, rY + 4.5); 
+        doc.setFont("Helvetica", "normal"); doc.text(convertTo24HourPrintString(getValue('timeSchedMove')), c2 - 2, rY + 4.5, { align: "right" });
         
         doc.setFont("Helvetica", "bold"); doc.text("Disembark", c2 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(convertTo24HourPrintString(getValue('timeDisembark')), 198, rY + 4.5, { align: "right" });
@@ -1036,19 +973,19 @@
         doc.setFont("Helvetica", "bold"); doc.text("Arr. Station", c2 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(convertTo24HourPrintString(getValue('timeArrStation')), 198, rY + 4.5, { align: "right" });
 
-        // Row 12: Bounding parameter exceptions and dynamic calculations line configuration mapping
+        // Row 12: Fixed overlapping exceptions assessment tracking box layout
         rY += rowH;
-        doc.setFont("Helvetica", "bold"); doc.text("Delays Assessment", 12, rY + 4.5); 
+        doc.setFont("Helvetica", "bold"); doc.text("Delay Fee", 12, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); 
         let rawDelayVal = getValue('delayMinutes');
         let delayPrintStr = getValue('delays');
         if (rawDelayVal && delayPrintStr !== 'None') delayPrintStr += ` (${rawDelayVal} Min)`;
         doc.text(delayPrintStr, c1 - 2, rY + 4.5, { align: "right" });
         
-        doc.setFont("Helvetica", "bold"); doc.text("Cancellation Log", c1 + 2, rY + 4.5); 
+        doc.setFont("Helvetica", "bold"); doc.text("Cancel Log", c1 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); doc.text(convertTo24HourPrintString(getValue('cancellation')), c2 - 2, rY + 4.5, { align: "right" });
         
-        doc.setFont("Helvetica", "bold"); doc.text("Delay/Cancel Reason", c2 + 2, rY + 4.5); 
+        doc.setFont("Helvetica", "bold"); doc.text("Reason", c2 + 2, rY + 4.5); 
         doc.setFont("Helvetica", "normal"); 
         let reasonStr = getValue('delayReason') === 'None' ? 'N/A' : getValue('delayReason');
         doc.text(reasonStr, 198, rY + 4.5, { align: "right" });
